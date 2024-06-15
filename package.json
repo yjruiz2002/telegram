@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'No build step needed'"
+    "build": "netlify deploy --prod",
+    "start": "node functions/main.js"
   },
   "author": "",
   "license": "ISC",
