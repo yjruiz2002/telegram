@@ -2,7 +2,7 @@ const { spawn } = require('child_process');
 
 exports.handler = async (event, context) => {
   return new Promise((resolve, reject) => {
-    const child = spawn('node', ['bot.js']);
+    const child = spawn('node', ['telegram.js']);
 
     child.stdout.on('data', (data) => {
       console.log(`stdout: ${data}`);
